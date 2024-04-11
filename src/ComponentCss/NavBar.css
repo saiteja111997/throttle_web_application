@@ -1,0 +1,72 @@
+/* NavBar.css */
+
+/* Move the nav links to the right */
+.navbar-nav {
+    margin-left: 600px;
+  }
+  
+  .navbar-nav .nav-link {
+    margin-right: 20px; /* Adjust the margin as needed */
+  }
+
+  .section {
+    background-color: #f6f6fa; /* Light cream background color */
+    box-shadow: 0px 4px 6px rgba(215, 213, 213, 0.1); /* Shadow effect */
+    padding: 20px; /* Adjust padding as needed */
+    margin-top: 20px; /* Add some space between sections */
+    margin-left: 20px;
+    max-width: 95%;
+  }
+
+  .left-content {
+    opacity: 0; /* Initially hide the left content */
+    animation: sweepLeft 1s ease forwards; /* Apply sweeping animation to left content */
+  }
+  
+  .right-content {
+    opacity: 0; /* Initially hide the right content */
+    animation: sweepRight 1s ease forwards; /* Apply sweeping animation to right content */
+  }
+  
+  /* Define animation keyframes for left content */
+@keyframes sweepLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px); /* Move left content from left */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Move left content back to its original position */
+  }
+}
+
+/* Define animation keyframes for right content */
+@keyframes sweepRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px); /* Move right content from right */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Move right content back to its original position */
+  }
+}
+  
+  /* Style for the text content */
+  .text {
+    font-size: medium;
+    padding: 0 20px; /* Adjust text content padding */
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style for the images */
+  .image img {
+    max-width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .text {
+      padding: 20px; /* Adjust text content padding for smaller screens */
+    }
+  }
+  

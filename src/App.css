@@ -1,0 +1,83 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* *{
+   border: 1px black solid;
+} */
+
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Align items to the start */
+  margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+.loginText {
+  margin-top: 0; /* Remove any default margin */
+  margin-left: -45px; /* Remove any default margin */
+  margin-bottom: 30px;
+}
+
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #616AF3, white);
+}
+
+
+
+.logo img {
+  width: 150px; /* Adjust as needed */
+  height: 150px; /* Adjust as needed */
+}
+
+h4 {
+ margin-bottom: 5px;
+}
+
+h6 {
+  margin-bottom: 20px;
+}
+
+.loginFooter {
+  margin-left: -160px;
+  margin-top: 10px;
+  padding: 2px;
+  font-size: 12px; /* Adjust the font size */
+}
+
+.customWidth {
+  width: 300px; /* Adjust the width as needed */
+  text-align: center; /* Align text to the center */
+  background-color: #616AF3;
+}
+
+.text {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+/* button {
+  padding: 10px 20px;
+  background-color: #007bff; 
+  color: #fff; 
+  border: none;
+  cursor: pointer;
+} */
+
+button:hover {
+  background-color: #0056b3; /* Adjust as needed */
+}
+
